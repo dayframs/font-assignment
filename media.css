@@ -17,6 +17,7 @@ button {
 } 
 .div2 {
     padding: 20px 10px 30px 10px;
+    vertical-align: center;
 }
 .search {
     margin-right: 10px;
