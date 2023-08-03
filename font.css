@@ -3,37 +3,33 @@
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     color: #29292c;
+    box-sizing: border-box;
 }
 header {
     border-bottom: 1px solid rgba(184, 184, 184, 30%);
     /* padding: 7px 20px 7px 30px; */
     position: fixed;
+    display: grid;
+    grid-template-columns: 400px auto;
     background-color: white;
     padding-bottom: 8px;
     padding-top: 4px;
-    height: 53px;
+    height: 66px;
 }
 .tblogo {
     width: 190px;
-    vertical-align:middle;
-    padding: 1px 2px;
-    transition: border 0.15s;
+    padding: 3px 2px;
 }
 .tblogo:active {
     border: 3px solid rgb(200, 9, 9);
 }
-div {
-    display: inline-block;
-}
 .div2 {
-    text-align: right;
-    width: 760px;
-    vertical-align: middle;
-    padding-top: 7px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1.5fr;
+    align-items: right;
+    justify-content: center;
 }
 .div1 {
-    width: 490px;
-    vertical-align: top;
     margin-left: 20px;
 }
 button {
@@ -41,8 +37,7 @@ button {
     font-size: 16px;
     margin-right: 18px;
     background-color: white;
-    padding: 6px 2px;
-}                                                                   
+}                              
 button:hover {
     color: rgb(200, 9, 9);
     cursor:pointer
@@ -59,7 +54,7 @@ button:active {
 .help {
     color: white;
     background-color: rgba(219, 7, 7, 0.8);
-    padding: 13px 20px;
+    padding: 4px 20px;
     font-weight: 600;
 }
 .help:hover {
@@ -73,8 +68,10 @@ img:hover {
 h2:hover {
     color: rgb(185, 2, 2);
 }
+main {
+    padding: 0 20px;
+}
 h1 {
-    /* width: 500px; */
     font-size: 50px;
     margin-top: 70px;
     margin-bottom: 30px;
@@ -90,19 +87,19 @@ h2 {
     line-height: 60px;
     font-size: 23px;
 }
+.div3, .div4, .div5 {
+    margin-inline: auto;
+}
 .div3 {
     width: 600px;
-    margin-left: 370px;
     text-align: center;
     padding-top: 70px;
 }
 .div4 {
-    margin-left: 425px;
     text-align: center;
     width: 500px;
 }
 .div5 {
-    margin-left: 300px;
     text-align: left;
     width:650px;
     padding-bottom: 50px;
@@ -111,11 +108,13 @@ h2 {
 }
 .div6 {
     color: rgb(189, 6, 6);
-    margin-left: 550px;
-    padding-bottom: 40px;
+    width: 300px;
+    margin-inline: auto;
+    text-align: right;
+    padding-bottom: 30px;
     font-weight: 500;
     font-size: 18px;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 a {
     color: rgb(213, 6, 6);
@@ -127,14 +126,25 @@ a {
     line-height: 10px;
     padding: 30px;
     text-align: center;
-    margin-left: 350px;
+    margin-inline: auto;
     margin-bottom: 80px;
     margin-top: 40px;
 }
+footer {
+    display: grid;
+    /* grid-template-rows: 3fr 1fr; */
+    row-gap: 1px;
+}
+.footera {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 18px 25px;
+}
 .div8 {
     text-align: left;
-    padding-left: 0;
-    width: 390px;
+    padding-left: 10px;
+    margin-left: 2px;
+    line-height: 45px;
 }
 span {
     color: red;
@@ -199,11 +209,13 @@ span {
     margin-bottom: 15px;
 }
 .p3 {
-    margin-left: 90px;
+    margin-inline: auto;
     margin-top: 55px;
+    width: 90%;
     font-size: 17px;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
     color: rgb(91, 89, 89);
+    text-align: center;
 }
 .p4 {
     display:inline-block;
@@ -225,16 +237,13 @@ input {
     padding: 8px 170px 8px 2px;
     font-size: 18px;
     font-weight: 700;
-}
-::placeholder {
-    font-size: 18px;
-    font-weight: 700;  
     color: rgba(178, 173, 173, 0.827);
-    padding-left: 8px;
 }
 footer {
-    padding: 65px 7px;
+    padding: 15px 7px;
     background-color: rgba(236, 232, 232, 50%);
+    display: grid;
+    grid-template-rows: auto 80px;
 }
 .butt1 {
     font-size: 18px;
