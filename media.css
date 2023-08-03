@@ -1,13 +1,13 @@
 @media (max-width: 600px) {
     header {
     display: grid;
-    grid-template-columns: 130px auto;
+    grid-template-columns: 125px auto;
 }
 .div1 {
     margin-left: 5px;
 }
 .tblogo {
-    width: 130px;
+    width: 125px;
     padding: 6px 2px;
 }
 button {
@@ -22,9 +22,9 @@ button {
     margin-right: 10px;
 } 
 .help {
-    padding: 2px 5px;
+    padding: 2px 4px;
     font-weight: 600;
-    font-size: 12px;
+    font-size: 11px;
 }
 h1 {
     font-size: 35px;
